@@ -7,7 +7,11 @@
     $mbool= true; 
     $mbool= false;
     $N=1;
+<<<<<<< HEAD
     $caractére="abc";
+=======
+    $="abc";
+>>>>>>> 6f8ddb7186cb988ffeb8e96ab49821e3721572b6
     $decimale=1.5;
  ?>
  <header>
@@ -37,7 +41,7 @@
 
     <tr>
         <td>nombre à virgule flottante</td>
-        <td>decimale</td>
+        <td>$decimale</td>
         <td>1.5</td>
     </tr>
 </table>
