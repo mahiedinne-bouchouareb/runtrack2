@@ -6,7 +6,7 @@
     <?php
     $mbool= true; 
     $N=1;
-    $c="abc";
+    $="abc";
     $decimale=1.5;
  ?>
  <header>
@@ -30,13 +30,13 @@
    </tr>
    <tr>
       <td>chaîne de caractères</td>
-      <td>abc</td>
+      <td>$abc</td>
       <td>string</td>
     </tr>
 
     <tr>
         <td>nombre à virgule flottante</td>
-        <td>decimale</td>
+        <td>$decimale</td>
         <td>1.5</td>
     </tr>
 </table>
