@@ -1,16 +1,18 @@
 <?php
 $j = 2;
-for ($i=0;$i<=1000;$i++){
+echo "<br/>";
+for ($i=0;$i<=100;$i++){
 if ($i==1){
 echo "$i";
 echo "<br/>";
 }else{
+
 while ($i%$j!=0){
 $j = $j + 1;
 }
 if ($i == $j){
 echo "$i";
-ECHO "<br/>";
+echo "<br/>";
 }
 $j = 2;
 }
