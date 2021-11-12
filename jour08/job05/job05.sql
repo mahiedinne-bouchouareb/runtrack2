@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : ven. 12 nov. 2021 à 12:46
+-- Généré le : ven. 12 nov. 2021 à 14:12
 -- Version du serveur :  5.7.31
 -- Version de PHP : 7.3.21
 
@@ -42,14 +42,9 @@ CREATE TABLE IF NOT EXISTS `etudiants` (
 -- Déchargement des données de la table `etudiants`
 --
 
-INSERT INTO `etudiants` (`id`, `prenom`, `nom`, `naissance`, `sexe`, `email`) VALUES
-(1, 'Cyril', 'Zimmermann', '1989-01-02', 'Homme', 'cyril@laplateforme.io'),
-(2, 'Jessica', 'Soriano', '1995-09-08', 'Femme', 'jessica@laplateforme.io'),
-(3, 'Roxan', 'Roumégas', '2016-09-08', 'Homme', 'roxan@laplateforme.io\r\n'),
-(4, 'Pascal', 'Assens', '1999-12-31', 'Homme', 'pascal@laplateforme.io'),
-(5, 'Terry', 'Cristinelli', '2005-02-01', 'Homme', 'terry@laplateforme.io'),
-(6, 'Ruben', 'Habib', '1993-05-26', 'Homme', 'ruben.habib@laplateforme.io'),
-(7, 'Toto', 'Dupont', '2019-11-07', 'Femme', 'toto@laplateforme.io');
+INSERT INTO `etudiants` (`prenom`, `nom`, `naissance`) VALUES
+('Jessica', 'Soriano', '1995-09-08'),
+('Toto', 'Dupont', '2019-11-07');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
