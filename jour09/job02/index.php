@@ -1,6 +1,6 @@
 <?php
 $db = mysqli_connect("localhost","root", "", "jour08");
-$requete =mysqli_query ($db , "SELECT * FROM etudiants") ;
+$requete =mysqli_query ($db , "SELECT nom,capacite FROM salles");
 $query = mysqli_fetch_all($requete,MYSQLI_ASSOC);
 
 ?>
@@ -11,7 +11,7 @@ $query = mysqli_fetch_all($requete,MYSQLI_ASSOC);
     <meta charset="UTF-8">
 
     <link rel="stylesheet" href="style.css" /> 
-    <title>tab</title>
+    <title>tableau</title>
 </head>
 
 

@@ -1,6 +1,6 @@
 <?php
 $db = mysqli_connect("localhost","root", "", "jour08");
-$requete =mysqli_query ($db , "SELECT * FROM etudiants") ;
+$requete =mysqli_query ($db , "SELECT  SUM(superficie) as 'superficie_totale' FROM etage");
 $query = mysqli_fetch_all($requete,MYSQLI_ASSOC);
 
 ?>
@@ -11,13 +11,13 @@ $query = mysqli_fetch_all($requete,MYSQLI_ASSOC);
     <meta charset="UTF-8">
 
     <link rel="stylesheet" href="style.css" /> 
-    <title>tab</title>
+    <title>tableau</title>
 </head>
 
 
 <body>
 
-<table border="10" cellpadding="15" width="100%">
+<table border="10" cellpadding="15" width="50%" >
    
 <?php 
    echo' <thead><tr>';
@@ -25,7 +25,7 @@ $query = mysqli_fetch_all($requete,MYSQLI_ASSOC);
                     foreach ( $query[0] as $key => $value)
                     
                     {
-                        echo "<th> $key </th>";             
+                        echo "<th> $key</th>";             
                     }
            
       echo  '</tr>';
@@ -39,7 +39,7 @@ $query = mysqli_fetch_all($requete,MYSQLI_ASSOC);
                     
                         foreach($value as $value2)
                         {
-                        echo "<td>$value2</td>"; 
+                        echo "<td><center>$value2</center></td>"; 
                         }
                     }
                     echo '<tr/>';     
